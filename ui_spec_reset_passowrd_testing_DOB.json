@@ -13,10 +13,10 @@
         },
         "validators": [
           {
-            "regex": "^\\d{8,9}$",
+            "regex": "^\\+91[1-9]\\d{8,9}$",
             "error": {
-              "eng": "Username must be a valid phone number with 8 or 9 digits",
-              "khm": "ឈ្មោះ​អ្នកប្រើប្រាស់ត្រូវតែជាលេខទូរស័ព្ទដែលមានលេខ 8 ឬ 9 តួ"
+              "eng": "Username must be a valid phone number with 9 or 10 digits",
+              "khm": "ឈ្មោះ​អ្នកប្រើប្រាស់ត្រូវតែជាលេខទូរស័ព្ទដែលមានលេខ 9 ឬ 10 តួ"
             }
           },
           {

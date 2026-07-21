@@ -18,7 +18,7 @@
   "properties": {
     "individualId": {
       "type": "string",
-      "pattern": "^[1-9]\\d{9}$"
+      "pattern": "^\\+91[1-9]\\d{8,9}$"
     },
     "fullName": {
       "allOf": [

@@ -238,7 +238,7 @@
     },
     "phone": {
       "type": "string",
-      "pattern": "^\\+91[6-9]\\d{9}$"
+      "pattern": "^\\+91[1-9]\\d{8,9}$"
     },
     "zoneInfo": {
       "type": ["string", "null"]

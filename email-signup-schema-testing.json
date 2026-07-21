@@ -7,12 +7,8 @@
       "items": {
         "type": "object",
         "properties": {
-          "language": {
-            "type": "string"
-          },
-          "value": {
-            "type": "string"
-          }
+          "language": { "type": "string" },
+          "value": { "type": "string" }
         },
         "required": ["language", "value"],
         "additionalProperties": false
@@ -22,13 +18,11 @@
   "properties": {
     "individualId": {
       "type": "string",
-      "pattern": "^\\+91[1-9]\\d{7,8}$"
+      "pattern": "^[1-9]\\d{9}$"
     },
     "fullName": {
       "allOf": [
-        {
-          "$ref": "#/$defs/langField"
-        },
+        { "$ref": "#/$defs/langField" },
         {
           "items": {
             "properties": {
@@ -46,12 +40,12 @@
     },
     "preferredLang": {
       "type": "string",
-      "enum": ["khm", "eng", "fra", "ara","hin"],
+      "enum": ["khm", "eng", "fra", "ara", "hin"],
       "nullable": true
     },
     "phone": {
       "type": "string",
-      "pattern": "^\\+91[1-9]\\d{7,8}$"
+      "pattern": "^\\+91[1-9]\\d{8,9}$"
     },
     "password": {
       "type": "string",
@@ -62,6 +56,6 @@
       "format": "email"
     }
   },
-  "required": ["fullName", "phone", "password","preferredLang"],
+  "required": ["fullName", "phone", "password", "preferredLang"],
   "additionalProperties": true
 }
